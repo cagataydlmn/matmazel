@@ -25,15 +25,17 @@ const Iletisim = () => {
     phone: '',
     message: '',
   });
-
-  const handleChange = (e) => {
+  {/*
+    const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
+  */}
 
-  const handleSubmit = (e) => {
+  {/*
+    const handleSubmit = (e) => {
     e.preventDefault();
     // Backend olmadığı için mailto kullanıyoruz
     const subject = encodeURIComponent('MATMAZEL Web Sitesi İletişim Formu');
@@ -42,6 +44,8 @@ const Iletisim = () => {
     );
     window.location.href = `mailto:info@matmazel.com?subject=${subject}&body=${body}`;
   };
+  */}
+
 
   return (
     <div className="py-32">
