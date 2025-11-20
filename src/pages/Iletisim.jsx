@@ -18,13 +18,15 @@ const Iletisim = () => {
       }
     }
   };
-
-  const [formData, setFormData] = useState({
+  {/*
+    const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: '',
   });
+  */}
+
   {/*
     const handleChange = (e) => {
     setFormData({
