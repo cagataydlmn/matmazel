@@ -34,14 +34,14 @@ const Header = () => {
       transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
     >
       <nav className="container mx-auto px-6 py-5 flex items-center justify-between">
-        <Link 
-          to="/" 
-          className="flex items-center z-50" 
+        <Link
+          to="/"
+          className="flex items-center z-50"
           onClick={() => setMobileMenuOpen(false)}
         >
           <Logo variant="minimal" />
         </Link>
-        
+
         <ul className="hidden md:flex items-center space-x-10">
           {navItems.map((item) => (
             <li key={item.path}>
@@ -108,7 +108,7 @@ const Header = () => {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
             >
-              <ul className="container mx-auto px-6 py-8 space-y-6">
+              <ul className="container mx-auto px-6 py-8 space-y-6 bg-black">
                 {navItems.map((item, index) => (
                   <motion.li
                     key={item.path}
@@ -139,4 +139,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
 

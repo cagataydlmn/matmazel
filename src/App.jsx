@@ -5,11 +5,13 @@ import Hakkimizda from './pages/Hakkimizda';
 import Hizmetler from './pages/Hizmetler';
 import Galeri from './pages/Galeri';
 import Iletisim from './pages/Iletisim';
+import ScrollToTop from "./components/ScrollTop.jsx";
 
 function App() {
   return (
     <Router>
       <Layout>
+        <ScrollToTop /> {/* <-- buraya ekle */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hakkimizda" element={<Hakkimizda />} />

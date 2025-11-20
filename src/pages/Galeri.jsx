@@ -50,7 +50,7 @@ const Galeri = () => {
           variants={staggerContainer}
         >
           <motion.h1
-            className="font-heading text-5xl md:text-7xl mb-8 tracking-wider font-light"
+              className="font-heading text-3xl md:text-5xl mb-8 tracking-wider font-light"
             variants={fadeInUp}
           >
             Galeri
@@ -175,4 +175,6 @@ const Galeri = () => {
 };
 
 export default Galeri;
+
+
 

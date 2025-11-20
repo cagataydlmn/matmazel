@@ -54,7 +54,7 @@ const Iletisim = () => {
           variants={staggerContainer}
         >
           <motion.h1
-            className="font-heading text-5xl md:text-7xl mb-8 tracking-wider font-light"
+              className="font-heading text-3xl md:text-5xl mb-8 tracking-wider font-light"
             variants={fadeInUp}
           >
             İletişim
@@ -73,7 +73,7 @@ const Iletisim = () => {
       </section>
 
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-20 max-w-7xl mx-auto">
           {/* Contact Information */}
           <motion.div
             initial="initial"
@@ -115,7 +115,7 @@ const Iletisim = () => {
                   </a>
                   
                   <a
-                    href="https://wa.me/905551234567"
+                    href="https://wa.me/905307003557"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-4 text-white/70 hover:text-champagne transition-colors duration-300 group"
@@ -129,7 +129,7 @@ const Iletisim = () => {
                   </a>
 
                   <a
-                    href="tel:+905551234567"
+                    href="tel:+905307003557"
                     className="flex items-center space-x-4 text-white/70 hover:text-champagne transition-colors duration-300 group"
                   >
                     <div className="w-12 h-12 border border-white/10 group-hover:border-champagne/50 transition-colors duration-300 flex items-center justify-center">
@@ -137,7 +137,7 @@ const Iletisim = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                     </div>
-                    <span className="font-light">+90 555 123 45 67</span>
+                    <span className="font-light">+90 530 700 35 57</span>
                   </a>
                 </div>
               </motion.div>
@@ -149,20 +149,21 @@ const Iletisim = () => {
               variants={fadeInUp}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.1234567890123!2d29.9167!3d40.7667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ2JzAwLjEiTiAyOcKwNTUnMDAuMSJF!5e0!3m2!1sen!2str!4v1234567890123!5m2!1sen!2str"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="opacity-80 hover:opacity-100 transition-opacity duration-300"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.1234567890123!2d29.9323432!3d40.7633154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb45706ca92a11%3A0xc79694653fb22c2a!2sMATMAZEL%20KUAF%C3%96R%20%7C%20%C4%B0ZM%C4%B0T%20KADIN%20KUAF%C3%96R!5e0!3m2!1sen!2str!4v169xxxxxxx"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="opacity-80 hover:opacity-100 transition-opacity duration-300"
               ></iframe>
             </motion.div>
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div
+          {/*
+           <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -174,7 +175,7 @@ const Iletisim = () => {
             >
               Mesaj Gönder
             </motion.h2>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <motion.div variants={fadeInUp}>
                 <label htmlFor="name" className="block text-sm text-white/60 mb-3 tracking-wide font-light uppercase">
@@ -191,7 +192,7 @@ const Iletisim = () => {
                   required
                 />
               </motion.div>
-              
+
               <motion.div variants={fadeInUp}>
                 <label htmlFor="email" className="block text-sm text-white/60 mb-3 tracking-wide font-light uppercase">
                   E-posta
@@ -207,7 +208,7 @@ const Iletisim = () => {
                   required
                 />
               </motion.div>
-              
+
               <motion.div variants={fadeInUp}>
                 <label htmlFor="phone" className="block text-sm text-white/60 mb-3 tracking-wide font-light uppercase">
                   Telefon
@@ -222,7 +223,7 @@ const Iletisim = () => {
                   placeholder="+90 555 123 45 67"
                 />
               </motion.div>
-              
+
               <motion.div variants={fadeInUp}>
                 <label htmlFor="message" className="block text-sm text-white/60 mb-3 tracking-wide font-light uppercase">
                   Mesaj
@@ -238,7 +239,7 @@ const Iletisim = () => {
                   required
                 ></textarea>
               </motion.div>
-              
+
               <motion.div variants={fadeInUp}>
                 <button
                   type="submit"
@@ -250,6 +251,8 @@ const Iletisim = () => {
               </motion.div>
             </form>
           </motion.div>
+           */}
+
         </div>
       </div>
     </div>
@@ -257,4 +260,6 @@ const Iletisim = () => {
 };
 
 export default Iletisim;
+
+
 

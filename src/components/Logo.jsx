@@ -17,7 +17,10 @@ const Logo = ({ className = '', variant = 'default' }) => {
         {/* Text */}
         <div className="font-heading text-xl md:text-2xl font-light tracking-wider text-white">
           MATMAZEL
-        </div>
+        </div><span>{" "}</span>|
+          <div className="font-heading text-sm font-light tracking-wider text-white">
+              İZMİT
+          </div>
       </div>
     ),
     minimal: (
@@ -32,6 +35,10 @@ const Logo = ({ className = '', variant = 'default' }) => {
         <div className="font-heading text-lg md:text-xl font-light tracking-wider text-white">
           MATMAZEL
         </div>
+          <span>{" "}</span>|
+          <div className="font-heading text-sm md:text-sm font-light tracking-wider text-white">
+              İZMİT
+          </div>
       </div>
     ),
     icon: (

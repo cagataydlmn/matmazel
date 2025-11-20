@@ -136,21 +136,45 @@ const Home = () => {
           >
             Hassasiyet ve sanatla hazırlanmış lüks güzellik hizmetleri deneyimi
           </motion.p>
-          
-          <motion.div variants={fadeInUp}>
-            <a
-              href="https://www.instagram.com/ekipmatmazelizmit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center space-x-3 px-10 py-4 border border-champagne/50 text-champagne hover:bg-champagne hover:text-black transition-all duration-500 tracking-wider text-sm font-light relative overflow-hidden"
-            >
-              <span className="relative z-10">Instagram Üzerinden Randevu Al</span>
-              <svg className="w-4 h-4 relative z-10 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-              </svg>
-              <div className="absolute inset-0 bg-champagne transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </a>
+
+          <motion.div variants={fadeInUp} className="w-full flex justify-center">
+            <div className="flex flex-col sm:flex-col gap-3 w-full max-w-xl justify-center items-center">
+
+              {/* Instagram Butonu */}
+              <a
+                  href="https://www.instagram.com/ekipmatmazelizmit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center space-x-2 px-6 py-3 border border-champagne/50 text-champagne
+                 hover:bg-champagne hover:text-black transition-all duration-500 tracking-wider text-sm font-light relative
+                 overflow-hidden w-full "
+              >
+                <span className="relative z-10 whitespace-nowrap">Instagram'dan Randevu Al</span>
+                <svg className="w-4 h-4 relative z-10 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+                </svg>
+                <div className="absolute inset-0 bg-champagne transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              </a>
+
+              {/* WhatsApp Butonu */}
+              <a
+                  href="https://wa.me/905307003557"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center space-x-2 px-6 py-3 border border-champagne/50 text-champagne
+                 hover:bg-champagne hover:text-black transition-all duration-500 tracking-wider text-sm font-light relative
+                 overflow-hidden w-full "
+              >
+                <span className="relative z-10 whitespace-nowrap">WhatsApp'tan İletişime Geç</span>
+                <svg className="w-4 h-4 relative z-10 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+                </svg>
+                <div className="absolute inset-0 bg-champagne transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              </a>
+
+            </div>
           </motion.div>
+
         </motion.div>
 
         {/* Scroll indicator */}
@@ -433,4 +457,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
 

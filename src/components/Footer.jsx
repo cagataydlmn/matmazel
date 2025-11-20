@@ -86,7 +86,7 @@ const Footer = () => {
               </a>
               
               <a
-                href="https://wa.me/905551234567"
+                href="https://wa.me/905307003557"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-white/50 hover:text-champagne transition-colors duration-300 group"
@@ -100,6 +100,19 @@ const Footer = () => {
                 <span className="font-light">WhatsApp</span>
               </a>
             </div>
+            <div className="w-full h-48 md:h-64 rounded overflow-hidden border border-white/10">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.1234567890123!2d29.9323432!3d40.7633154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb45706ca92a11%3A0xc79694653fb22c2a!2sMATMAZEL%20KUAF%C3%96R%20%7C%20%C4%B0ZM%C4%B0T%20KADIN%20KUAF%C3%96R!5e0!3m2!1sen!2str!4v169xxxxxxx"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="opacity-80 hover:opacity-100 transition-opacity duration-300"
+              ></iframe>
+            </div>
+
           </motion.div>
         </div>
         
@@ -114,4 +127,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
 
