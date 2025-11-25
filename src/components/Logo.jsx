@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import logoImage from '../assets/WhatsApp Image 2025-11-17 at 23.44.44 (1).jpeg';
+import logoImage from '../assets/logo-white.png';
 
 const Logo = ({ className = '', variant = 'default' }) => {
   // Logo görselini kullan
@@ -10,7 +10,7 @@ const Logo = ({ className = '', variant = 'default' }) => {
         <div className="relative w-12 h-12 md:w-16 md:h-16">
           <img
             src={logoImage}
-            alt="MATMAZEL Logo"
+            alt="matmazel izmit , kadın kuaför , izmit kadın kuaförü"
             className="w-full h-full object-contain"
           />
         </div>
@@ -28,7 +28,7 @@ const Logo = ({ className = '', variant = 'default' }) => {
         <div className="relative w-10 h-10 md:w-12 md:h-12">
           <img
             src={logoImage}
-            alt="MATMAZEL Logo"
+            alt="matmazel izmit , kadın kuaför , izmit kadın kuaförü"
             className="w-full h-full object-contain"
           />
         </div>
@@ -45,7 +45,7 @@ const Logo = ({ className = '', variant = 'default' }) => {
       <div className={`relative w-10 h-10 md:w-12 md:h-12 ${className}`}>
         <img
           src={logoImage}
-          alt="MATMAZEL Logo"
+          alt="matmazel izmit , kadın kuaför , izmit kadın kuaförü"
           className="w-full h-full object-contain"
         />
       </div>

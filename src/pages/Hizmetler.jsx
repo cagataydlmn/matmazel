@@ -1,4 +1,9 @@
 import { motion } from 'framer-motion';
+import sactasarim from '../assets/foto114.jpeg';
+import renklendirme from '../assets/foto(5).jpeg';
+import kesim from '../assets/kesim.jpeg';
+import gelin from '../assets/gelin.jpeg';
+import makyaj from '../assets/makyaj.jpeg';
 
 const Hizmetler = () => {
   const fadeInUp = {
@@ -24,30 +29,39 @@ const Hizmetler = () => {
       description: 'Her duruma uygun uzman tasarım hizmetleri. Zarif topuzlardan akan dalgalara kadar, stilistlerimiz kişisel stilinizi tamamlayan ve doğal güzelliğinizi vurgulayan görünümler yaratır.',
       features: ['Özel gün tasarımları', 'Günlük görünümler', 'Trend belirleyici tasarımlar', 'Kişiselleştirilmiş danışmanlık'],
       icon: '✂️',
+      resim:sactasarim
     },
     {
       title: 'Renklendirme',
       description: 'Yüksek kaliteli ürünler kullanılarak premium renk işlemleri. İster ince highlightlar, ister cesur dönüşümler veya renk düzeltme istiyorsanız, çarpıcı sonuçlar sunuyoruz.',
       features: ['Highlight & Lowlight', 'Tam renklendirme', 'Renk düzeltme', 'Balayage & Ombre'],
       icon: '🎨',
+      resim:renklendirme
+
     },
     {
       title: 'Kesim',
       description: 'Yüz şeklinize, yaşam tarzınıza ve kişisel tercihlerinize göre özelleştirilmiş hassas kesimler. Yetenekli stilistlerimiz, bakımı ve şekillendirmesi kolay, şık kesimler yaratır.',
       features: ['Hassas kesim teknikleri', 'Katmanlı stiller', 'Dokulu kesimler', 'Klasik & modern'],
       icon: '💇',
+      resim:kesim
+
     },
     {
       title: 'Gelin Saçı',
       description: 'Özel gününüz için özel gelin saçı hizmetleri. Vizyonunuzla eşleşen ve düğün stilinizi tamamlayan mükemmel gelin görünümünü yaratmak için sizinle yakın çalışıyoruz.',
       features: ['Gelin danışmanlıkları', 'Deneme seansları', 'Düğün günü tasarımı', 'Gelin alayı paketleri'],
       icon: '👰',
+      resim:gelin
+
     },
     {
       title: 'Profesyonel Makyaj',
       description: 'Tüm durumlar için kusursuz makyaj sanatı. Makyaj sanatçılarımız, özelliklerinizi vurgulamak ve uzun süre dayanıklı, güzel görünümler yaratmak için premium ürünler ve teknikler kullanır.',
       features: ['Gelin makyajı', 'Özel etkinlikler', 'Editorial görünümler', 'Doğal & glam'],
       icon: '💄',
+      resim:makyaj
+
     },
   ];
 
@@ -92,17 +106,29 @@ const Hizmetler = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={staggerContainer}
             >
-              <motion.div
-                className="flex-1 w-full md:w-auto"
-                variants={fadeInUp}
-              >
-                <div className="aspect-square bg-gradient-to-br from-champagne/10 to-transparent border border-white/10 p-12 flex items-center justify-center group hover:border-champagne/30 transition-colors duration-500">
-                  <div className="w-32 h-32 border border-champagne/30 group-hover:border-champagne transition-colors duration-500 flex items-center justify-center relative">
-                    <div className="text-6xl">{service.icon}</div>
-                    <div className="absolute inset-0 border border-champagne/10 group-hover:border-champagne/30 transition-colors duration-500 scale-75"></div>
-                  </div>
-                </div>
-              </motion.div>
+     <motion.div
+  className="flex-1 w-full md:w-auto"
+  variants={fadeInUp}
+>
+  <div className="aspect-square relative overflow-hidden rounded-xl
+                  bg-gradient-to-br from-champagne/10 to-transparent
+                  border border-white/10 group
+                  transition-all duration-500 hover:border-champagne/30">
+      
+    {/* Görsel */}
+    <img
+      src={service.resim}
+      alt="Hizmet Görseli"
+      className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700"
+    />
+
+    {/* İç kenarlık */}
+    <div className="absolute inset-0 border border-champagne/10 rounded-xl
+                    group-hover:border-champagne/30 transition-colors duration-500">
+    </div>
+  </div>
+</motion.div>
+
               
               <motion.div className="flex-1" variants={fadeInUp}>
                 <h2 className="font-heading text-3xl md:text-5xl mb-6 tracking-wider font-light">
@@ -163,6 +189,9 @@ const Hizmetler = () => {
 };
 
 export default Hizmetler;
+
+
+
 
 
 

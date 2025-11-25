@@ -117,9 +117,9 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/5 pt-8 text-center">
-          <p className="text-white/30 text-xs tracking-wider font-light">
-            &copy; {new Date().getFullYear()} MATMAZEL. Tüm hakları saklıdır.
-          </p>
+          <a href='https://acdigital.tech/' className="text-white/30 text-xs tracking-wider font-light">
+            &copy; {new Date().getFullYear()} AC DIGITAL. Tüm hakları saklıdır.
+          </a>
         </div>
       </div>
     </footer>
@@ -127,6 +127,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
 
 
 

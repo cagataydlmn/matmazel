@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Logo from '../components/Logo';
-import image1 from '../assets/WhatsApp Image 2025-11-17 at 23.44.44.jpeg';
-import image2 from '../assets/WhatsApp Image 2025-11-17 at 23.44.44 (1).jpeg';
+import image1 from '../assets/foto(1).jpeg';
+import image2 from '../assets/foto(4).jpeg';
+import image3 from '../assets/foto(8).jpeg';
+import image4 from '../assets/foto11.jpeg';
+import aboutImage from '../assets/icmekanmatmazel.jpeg';
 
 const Home = () => {
   const fadeInUp = {
@@ -52,18 +55,18 @@ const Home = () => {
 
   const testimonials = [
     {
-      text: 'Kesinlikle muhteşem bir deneyim! MATMAZEL ekibi görünümümü tamamen değiştirdi. Kendimi bir prenses gibi hissettim.',
-      author: '— Sarah K.',
+      text: 'Efe bey ve ekibine çok teşekkür ediyorum, koyu bir kızıl tonundan saçımı nerdeyse yıpranmadan istediğim kumral rengine döndürdüler. Çok ayrıntılı bir şekilde saçımdaki renk değişiminin nasıl istediğim gibi olabileceğini anlattılar. Ekipce hoş sohbet ve muhabbetle zamanın nasıl geçtiğini anlamadan saatler hızla geçti ilgisinden dolayı herkese teşekkür ederim.',
+      author: '— Hatice A.',
       rating: 5,
     },
     {
-      text: 'İzmit\'teki en iyi saç stüdyosu. Profesyonel, şık ve gerçekten premium hizmet. Kesinlikle tavsiye ederim!',
-      author: '— Elif M.',
+      text: 'merhabalar az önce matmazel kuaförden çıktım, öncelikle çınar bey ve ekip arkadaşlarına çok teşekkür ederim, çok ilgili ve güler yüzlülüler. saçlarımı istediğim renkten çok daha güzel yaptılar. 5 yıldızdan çok daha fazlasını hakediyolar. ellerine sağlık',
+      author: '— Merve A.',
       rating: 5,
     },
     {
-      text: 'Kendimi bir kraliçe gibi hissettim! Detaylara gösterilen özen eşsiz. Her ziyaret bir lüks deneyim.',
-      author: '— Zeynep A.',
+      text: 'Tavsiye üzerine geldiğim bır salondan daimi kuaförüm olacak sekılde ayrıldım . Güler yuz ve profesyonel hizmet ile mutsuz ayrılmanız mümkün degil . Hepinize çok teşekkür ederim 🌼🙏🏻',
+      author: '— Özlem B.',
       rating: 5,
     },
   ];
@@ -228,7 +231,15 @@ const Home = () => {
               </div>
               <div className="relative">
                 <div className="aspect-square bg-white/5 border border-white/10 p-8">
-                  <div className="w-full h-full bg-gradient-to-br from-champagne/10 to-transparent"></div>
+                  <div className="w-full h-full bg-gradient-to-br from-champagne/10 to-transparent">
+                    <img
+                    className='  className="w-full h-full object-cover'
+                    style={{ width: "100%" }}
+                    src={aboutImage}
+                      alt='İzmit Kadın Kufaör - Matmazel İzmit'
+                    />
+                    
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -324,7 +335,7 @@ const Home = () => {
           </motion.div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-            {[image1, image2, image1, image2].map((img, index) => (
+            {[image1, image2, image3, image4].map((img, index) => (
               <motion.div
                 key={index}
                 className="aspect-square overflow-hidden border border-white/10 hover:border-champagne/50 transition-colors duration-500 group relative"
@@ -339,7 +350,7 @@ const Home = () => {
               >
                 <img
                   src={img}
-                  alt={`Galeri ${index + 1}`}
+                  alt="matmazel izmit , izmit kadın kuaför"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500"></div>
@@ -457,6 +468,9 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
 
 
 

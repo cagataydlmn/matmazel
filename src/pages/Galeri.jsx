@@ -1,7 +1,22 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import image1 from '../assets/WhatsApp Image 2025-11-17 at 23.44.44.jpeg';
-import image2 from '../assets/WhatsApp Image 2025-11-17 at 23.44.44 (1).jpeg';
+import image1 from '../assets/foto(1).jpeg';
+import image2 from '../assets/foto(2).jpeg';
+import image3 from '../assets/foto(3).jpeg';
+import image4 from '../assets/foto(4).jpeg';
+import image5 from '../assets/foto(5).jpeg';
+import image6 from '../assets/foto(6).jpeg';
+import image7 from '../assets/foto(7).jpeg';
+import image8 from '../assets/foto(8).jpeg';
+import image9 from '../assets/foto(9).jpeg';
+import image10 from '../assets/foto10.jpeg';
+import image11 from '../assets/foto11.jpeg';
+import image12 from '../assets/foto12.jpeg';
+import image13 from '../assets/foto13.jpeg';
+import image14 from '../assets/foto114.jpeg';
+import image15 from '../assets/foto15.jpeg';
+import image16 from '../assets/foto16.jpeg';
+import image17 from '../assets/foto.jpeg';
 
 const Galeri = () => {
   const fadeInUp = {
@@ -25,16 +40,21 @@ const Galeri = () => {
   const galleryItems = [
     { id: 1, image: image1, aspect: 'tall' },
     { id: 2, image: image2, aspect: 'wide' },
-    { id: 3, image: image1, aspect: 'square' },
-    { id: 4, image: image2, aspect: 'tall' },
-    { id: 5, image: image1, aspect: 'wide' },
-    { id: 6, image: image2, aspect: 'square' },
-    { id: 7, image: image1, aspect: 'tall' },
-    { id: 8, image: image2, aspect: 'wide' },
-    { id: 9, image: image1, aspect: 'square' },
-    { id: 10, image: image2, aspect: 'tall' },
-    { id: 11, image: image1, aspect: 'wide' },
-    { id: 12, image: image2, aspect: 'square' },
+    { id: 3, image: image3, aspect: 'square' },
+    { id: 4, image: image4, aspect: 'tall' },
+    { id: 5, image: image5, aspect: 'wide' },
+    { id: 6, image: image6, aspect: 'square' },
+    { id: 7, image: image7, aspect: 'tall' },
+    { id: 8, image: image8, aspect: 'wide' },
+    { id: 9, image: image9, aspect: 'square' },
+    { id: 10, image: image10, aspect: 'tall' },
+    { id: 11, image: image11, aspect: 'wide' },
+    { id: 12, image: image12, aspect: 'square' },
+    { id: 13, image: image13, aspect: 'tall' },
+    { id: 14, image: image14, aspect: 'wide' },
+    { id: 15, image: image15, aspect: 'square' },
+    { id: 16, image: image16, aspect: 'tall' },
+    { id: 17, image: image17, aspect: 'wide' },
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -71,34 +91,32 @@ const Galeri = () => {
       {/* Gallery Grid */}
       <section className="container mx-auto px-6">
         <motion.div
-          className="columns-1 md:columns-2 lg:columns-3 gap-6"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerContainer}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[10px]"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
         >
-          {galleryItems.map((item, index) => (
-            <motion.div
-              key={item.id}
-              className={`mb-6 break-inside-avoid bg-white/5 border border-white/10 hover:border-champagne/50 transition-all duration-500 cursor-pointer overflow-hidden group ${
-                item.aspect === 'tall' ? 'aspect-[3/4]' :
-                item.aspect === 'wide' ? 'aspect-[4/3]' :
-                'aspect-square'
-              }`}
-              variants={fadeInUp}
-              whileHover={{ scale: 1.02 }}
-              onClick={() => setSelectedImage(item)}
-            >
-              <div className="relative w-full h-full">
-                <img
-                  src={item.image}
-                  alt={`Galeri ${item.id}`}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500"></div>
-                <div className="absolute inset-0 border border-transparent group-hover:border-champagne/30 transition-colors duration-500"></div>
-              </div>
-            </motion.div>
+          {galleryItems.map((item) => (
+              <motion.div
+                  key={item.id}
+                  className={`overflow-hidden rounded-xl bg-white/5 border border-white/10 hover:border-champagne/50 transition-all duration-500 cursor-pointer group
+          ${item.aspect === 'tall' ? 'row-span-12' :
+                      item.aspect === 'wide' ? 'row-span-8' :
+                          'row-span-10'}
+        `}
+                  variants={fadeInUp}
+                  whileHover={{ scale: 1.02 }}
+                  onClick={() => setSelectedImage(item)}
+              >
+                <div className="relative w-full h-full">
+                  <img
+                      src={item.image}
+                      alt="matmazel izmit , izmit kadın kuaför"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </div>
+              </motion.div>
           ))}
         </motion.div>
       </section>
@@ -156,7 +174,7 @@ const Galeri = () => {
             >
               <img
                 src={selectedImage.image}
-                alt={`Galeri ${selectedImage.id}`}
+                alt="matmazel izmit , izmit kadın kuaför"
                 className="max-w-full max-h-[90vh] object-contain border border-white/20"
               />
               <button
@@ -175,6 +193,9 @@ const Galeri = () => {
 };
 
 export default Galeri;
+
+
+
 
 
 

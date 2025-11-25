@@ -62,7 +62,7 @@ const Hakkimizda = () => {
               className="text-white/70 text-lg md:text-xl leading-relaxed mb-8 font-light"
               variants={fadeInUp}
             >
-              MATMAZEL'de, her kadının güzel, kendine güvenli ve güçlü hissetmeyi hak ettiğine inanıyoruz. 
+              MATMAZEL İzmit'te, her kadının güzel, kendine güvenli ve güçlü hissetmeyi hak ettiğine inanıyoruz. 
               Misyonumuz, doğal güzelliğinizi sadece geliştirmekle kalmayıp, aynı zamanda benzersiz 
               kişiliğinizi ve stilinizi yansıtan premium saç ve makyaj hizmetleri sunmaktır.
             </motion.p>
@@ -208,6 +208,9 @@ const Hakkimizda = () => {
 };
 
 export default Hakkimizda;
+
+
+
 
 
 
