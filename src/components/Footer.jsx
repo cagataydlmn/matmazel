@@ -8,7 +8,6 @@ const Footer = () => {
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.6 }
   };
-
   return (
     <footer className="bg-black border-t border-white/10 py-16 relative">
       <div className="absolute inset-0 border-t border-white/5"></div>
